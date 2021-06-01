@@ -397,3 +397,71 @@ Set-GitHubProfile -Company 'AP Hogeschool'$repo = New-GitHubRepository `
 "208","git","Completed","1/06/2021 19:55:28","1/06/2021 19:55:28"
 "209","git push -u ","Completed","1/06/2021 19:55:40","1/06/2021 19:55:43"
 "210","git push -u origin main","Completed","1/06/2021 19:55:49","1/06/2021 19:55:51"
+"211","Get-History | Export-CSV snippets.ps1","Completed","1/06/2021 19:57:52","1/06/2021 19:57:52"
+"212","Get-History | Export-CSV \snippets.ps1","Completed","1/06/2021 19:58:43","1/06/2021 19:58:43"
+"213","ls","Completed","1/06/2021 19:58:44","1/06/2021 19:58:44"
+"214","git init","Completed","1/06/2021 19:58:52","1/06/2021 19:58:52"
+"215","Get-History | Export-CSV \snippets.ps1","Completed","1/06/2021 19:59:08","1/06/2021 19:59:08"
+"216","git commit","Completed","1/06/2021 19:59:31","1/06/2021 19:59:31"
+"217","git add","Completed","1/06/2021 19:59:36","1/06/2021 19:59:36"
+"218","git add","Completed","1/06/2021 19:59:45","1/06/2021 19:59:45"
+"219","git add .","Completed","1/06/2021 19:59:52","1/06/2021 19:59:52"
+"220","git commit","Completed","1/06/2021 19:59:57","1/06/2021 20:00:54"
+"221","git commit","Completed","1/06/2021 20:01:03","1/06/2021 20:01:59"
+"222","git push","Completed","1/06/2021 20:02:05","1/06/2021 20:02:08"
+"223","git push -u origin main","Completed","1/06/2021 20:02:24","1/06/2021 20:02:26"
+"224","cls","Completed","1/06/2021 20:40:20","1/06/2021 20:40:20"
+"225","$Headers   ","Completed","1/06/2021 20:44:44","1/06/2021 20:44:44"
+"226","Remove-Variable $headers ","Completed","1/06/2021 20:45:13","1/06/2021 20:45:13"
+"227","Remove-Variable headers ","Completed","1/06/2021 20:45:33","1/06/2021 20:45:33"
+"228","$auth","Completed","1/06/2021 20:48:37","1/06/2021 20:48:37"
+"229","Remove-Variable $auth","Completed","1/06/2021 20:55:37","1/06/2021 20:55:38"
+"230","Remove-Variable auth","Completed","1/06/2021 20:55:46","1/06/2021 20:55:46"
+"231","$creds","Completed","1/06/2021 20:56:08","1/06/2021 20:56:08"
+"232","Remove-Variable creds","Completed","1/06/2021 20:56:49","1/06/2021 20:56:49"
+"233","$creds = 'Sofian12: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'
+$auth = `
+[System.Convert]::ToBase64String([char[]]$creds.GetNet
+workCredential().Password)
+$headers = @{Authorization=""Basic $auth""}","Failed","1/06/2021 21:38:31","1/06/2021 21:38:31"
+"234","$creds = 'Sofian12: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'","Completed","1/06/2021 21:38:46","1/06/2021 21:38:46"
+"235","$auth = `
+[System.Convert]::ToBase64String([char[]]$creds.GetNetworkCredential().Password)","Completed","1/06/2021 21:39:04","1/06/2021 21:39:04"
+"236","$auth = `[System.Convert]::ToBase64String([char[]]$creds.GetNetworkCredential().Password)","Completed","1/06/2021 21:39:16","1/06/2021 21:39:16"
+"237","$creds","Completed","1/06/2021 21:39:48","1/06/2021 21:39:48"
+"238","$creds = New-Object pscredential 'user?, $ss_token","Completed","1/06/2021 21:40:33","1/06/2021 21:40:33"
+"239","$auth = `[System.Convert]::ToBase64String([char[]]$creds.GetNetworkCredential().Password)","Completed","1/06/2021 21:40:42","1/06/2021 21:40:42"
+"240","cls","Completed","1/06/2021 21:43:36","1/06/2021 21:43:36"
+"241","$auth","Completed","1/06/2021 21:43:46","1/06/2021 21:43:46"
+"242","$auth = `[System.Convert]::ToBase64String([char[]]$creds.GetNetworkCredential().Password)","Completed","1/06/2021 21:43:55","1/06/2021 21:43:55"
+"243","Read-Host -AsSecureString -Prompt ?token? |
+ConvertFrom-SecureString |
+Tee-Object .\secret.txt |
+ConvertTo-SecureString |
+Set-Variable ss_token
+? $creds = New-Object pscredential 'user?, $ss_token","Completed","1/06/2021 21:44:05","1/06/2021 21:44:14"
+"244","Read-Host -AsSecureString -Prompt ?token? |
+ConvertFrom-SecureString |
+Tee-Object .\secret.txt |
+ConvertTo-SecureString |
+Set-Variable ss_token
+$creds = New-Object pscredential 'user?, $ss_token","Completed","1/06/2021 21:44:21","1/06/2021 21:44:23"
+"245","Set-GitHubAuthentication -SessionOnly `
+-Credential $creds","Completed","1/06/2021 21:44:37","1/06/2021 21:44:37"
+"246","$auth = `[System.Convert]::ToBase64String([char[]]$creds.GetNetworkCredential().Password)","Completed","1/06/2021 21:45:01","1/06/2021 21:45:01"
+"247","$auth = `
+[System.Convert]::ToBase64String([char[]]$creds.GetNetworkCredential().Password)","Completed","1/06/2021 21:45:25","1/06/2021 21:45:25"
+"248","$headers = @{Authorization=""Basic $auth""}","Completed","1/06/2021 21:45:29","1/06/2021 21:45:29"
+"249","$headers = @{Authorization=""Basic $auth""}","Completed","1/06/2021 21:46:02","1/06/2021 21:46:02"
+"250","cls","Completed","1/06/2021 21:46:52","1/06/2021 21:46:52"
+"251","Invoke-RestMethod -Headers $headers `
+https://api.github.com/user","Completed","1/06/2021 21:46:53","1/06/2021 21:46:54"
+"252","open C:\Users\sofia\.ssh\id_rsa","Completed","1/06/2021 21:52:59","1/06/2021 21:52:59"
+"253","cd C:\Users\sofia\.ssh\id_rsa","Completed","1/06/2021 21:53:05","1/06/2021 21:53:05"
+"254","$creds","Completed","1/06/2021 21:53:34","1/06/2021 21:53:34"
+"255","$api","Completed","1/06/2021 21:54:07","1/06/2021 21:54:07"
+"256","Invoke-RestMethod -Headers $headers $api/user","Completed","1/06/2021 21:54:21","1/06/2021 21:54:22"
+"257","get /user/keys","Completed","1/06/2021 21:54:55","1/06/2021 21:54:55"
+"258","$repos.ssh_url","Completed","1/06/2021 21:58:22","1/06/2021 21:58:22"
+"259","cat C:\Users\sofia\.ssh\id_rsa.pub","Completed","1/06/2021 21:59:57","1/06/2021 21:59:57"
+"260","Invoke-RestMethod -Headers $headers -Uri https://api.github.com/user -Body '{""company"": ""AP Hogeschool - Antwerpen""}' -Method Patch ","Completed","1/06/2021 22:07:35","1/06/2021 22:07:36"
