@@ -124,9 +124,9 @@ function Add-GitHubCollaborator(){
 
 [CmdletBinding()]
 	param(
-		[Parameter(Mandatory=$true)]
+		[Parameter(Mandatory=$true,ValueFromPipeline=$true)]
 		[String] $repoName,
-		[Parameter(Mandatory=$true)]
+		[Parameter(Mandatory=$true,ValueFromPipeline=$true)]
 		[String[]] $gitHubUserNames
 	)
 		
